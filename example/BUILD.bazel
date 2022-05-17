@@ -1,0 +1,20 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_test")
+
+cc_test(
+    name = "get",
+    srcs = ["get.cpp"],
+    deps = ["//:pfr"],
+)
+
+cc_binary(
+    name = "motivating_example0",
+    srcs = ["motivating_example0.cpp"],
+    deps = ["//:pfr"],
+)
+
+cc_test(
+    name = "sample_printing",
+    srcs = ["sample_printing.cpp"],
+    deps = ["//:pfr"],
+)
+
